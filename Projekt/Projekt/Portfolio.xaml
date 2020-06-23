@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Projekt.Portfolio"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button 
+                        Grid.Column="0"
+                        Margin="10,10"
+                        Text="Wroc!"
+                        BackgroundColor="#d41e4e"
+                        TextColor="White"
+                        FontSize="Large"
+                        x:Name="goBack"
+                        Clicked="goBack_Clicked"
+                        CornerRadius="10"
+                        />
+
+                    <Button 
+                        Grid.Column="2"
+                        Margin="30,10"
+                        Text="( ͡° ͜ʖ ͡°)"
+                        BackgroundColor="#d41e4e"
+                        TextColor="White"
+                        FontSize="Large"
+                        x:Name="meme"
+                        Clicked="meme_Clicked"
+                        CornerRadius="10"
+                        />
+                </Grid>
+                <Image 
+                Source="BubblesProfile.png"
+                MinimumHeightRequest="100"
+                />
+                <StackLayout Margin="0, 30">
+                    <Label 
+                    Text="Imie i Nazwisko"
+                    FontSize="Micro"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    />
+                    <Label 
+                    Text="Jakub Ferenc"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label 
+                    Text="Numer albumu"
+                    FontSize="Micro"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    />
+                    <Label 
+                    Text="60101"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Margin="0, 30">
+                    <Label 
+                    Text="Lista zainteresowan"
+                    FontSize="Micro"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    />
+                    <Label 
+                    Text="Lubie myslec"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"
+                        Margin="0, 5"/>
+
+
+                    <Label 
+                    Text="Cwiczyc pamiec"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"
+                        Margin="0, 5"/>
+                    
+                    <Label 
+                    Text="Rozwijac sie intelektualnie"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"
+                        Margin="0, 5"/>
+                    
+                    <Label 
+                    Text="Grac w Hokey, biegac, skakac"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"
+                        Margin="0, 5"/>
+                    
+                    <Label 
+                    Text="Mam na imie Jakub"
+                    FontSize="Large"
+                    TextColor="#d41e4e"
+                    HorizontalOptions="Center"
+                        Margin="0, 5"/>
+                </StackLayout>
+
+                <Button 
+                    Text="F [*]"
+                    Margin="30, 10"
+                    CornerRadius="10"
+                    BackgroundColor="#d41e4e"
+                    TextColor="White"
+                    FontSize="Large"
+                    Command="{Binding Strona}"
+                    />
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
